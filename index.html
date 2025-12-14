@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Ігровий настрій | Галерея зарядженої їжі</title>
+    <link rel="stylesheet" href="task1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="page">
+
+<header class="site-header">
+    <div class="header_logo_full">
+        <h1 class="logo">Ігровий настрій</h1>
+        <span class="logo_icon">⚔️</span>
+    </div>
+    <p class="subtitle">Галерея зарядженої їжі</p>
+</header>
+
+<main class="main">
+
+<input type="radio" name="category" id="filter-all" class="filter-input" checked>
+<input type="radio" name="category" id="filter-energy" class="filter-input">
+<input type="radio" name="category" id="filter-fun_food" class="filter-input">
+<input type="radio" name="category" id="filter-quik_break" class="filter-input">
+<input type="radio" name="category" id="filter-cupcakes" class="filter-input">
+
+<input type="radio" name="calories" id="cal-all" class="filter-input" checked>
+<input type="radio" name="calories" id="cal-low" class="filter-input">
+<input type="radio" name="calories" id="cal-medium" class="filter-input">
+<input type="radio" name="calories" id="cal-high" class="filter-input">
+
+
+<section class="filters">
+    <div class="filters__block filters__block--category">
+        <h2 class="filters__title">Фільтр за видами виробів</h2>
+        <div class="category-buttons">
+            <label class="category-button" for="filter-all">Усі</label>
+            <label class="category-button" for="filter-energy">Енергія</label>
+            <label class="category-button" for="filter-fun_food">Фан-фуд</label>
+            <label class="category-button" for="filter-quik_break">Швидкий сніданок</label>
+            <label class="category-button" for="filter-cupcakes">Кекси</label>
+        </div>
+
+        <h2 class="filters__title filters__title--calories">Фільтр за калорійністю</h2>
+        <div class="calories-buttons">
+            <label class="category-button" for="cal-all">Усі (Ккал)</label>
+            <label class="category-button" for="cal-low">До 300 ккал</label>
+            <label class="category-button" for="cal-medium">300–500 ккал</label>
+            <label class="category-button" for="cal-high">Понад 500 ккал</label>
+        </div>
+    </div>
+</section>
+
+<section class="gallery">
+
+<article class="card energy low">
+    <img src="img/Smuzi.jpg" class="card__image">
+    <div class="card__content">
+        <h3 class="card__title">Склянки "HP Potion"</h3>
+        <p class="card__text">Смузі з насінням чіа, йогуртом та ягодами, подається у склянках.</p>
+    </div>
+    <div class="card__divider"></div>
+    <div class="card__meta">
+        <p>Категорія: Напій </p>
+        <p>Ккал: 250-300</p>
+        <p>Час готування: 15 хв.</p>
+    </div>
+</article>
+
+<article class="card energy medium">
+    <img src="img/Level_UP.jpg" class="card__image">
+    <div class="card__content">
+        <h3 class="card__title">Шоколадний торт "Level Up"</h3>
+        <p class="card__text">Класичний бісквіт з насиченим кремом, щоб відчути "підвищення рівня" та ситість.</p>
+    </div>
+    <div class="card__divider"></div>
+    <div class="card__meta">
+        <p>Категорія: Торт</p>
+        <p>Ккал: 420</p>
+        <p>Час: 1 год. 20 хв.</p>
+    </div>
+</article>
+
+<article class="card fun_food low">
+    <img src="img/Rage_quit.jpg" class="card__image">
+    <div class="card__content">
+        <h3 class="card__title">Кульки "Rage Quit" (Трюфелі)</h3>
+        <p class="card__text">Гіркий шоколад, чилі та морська сіль для різкого смакового перезавантаження.</p>
+    </div>
+    <div class="card__divider"></div>
+    <div class="card__meta">
+        <p>Категорія: Трюфелі</p>
+        <p>Ккал: 150(шт.)</p>
+        <p>Час: 25 хв</p>
+    </div>
+</article>
+
+<article class="card fun_food high">
+    <img src="img/Defuse.jpeg" class="card__image">
+    <div class="card__content">
+        <h3 class="card__title">Піца-сніжка "Defuse"</h3>
+        <p class="card__text">Міні-пиріжки із ситною, солоною начинкою (м'ясо/сир/зелень).</p>
+    </div>
+    <div class="card__divider"></div>
+    <div class="card__meta">
+        <p>Категорія: Піца</p>
+        <p>Ккал: 520</p>
+        <p>Час: 45 хв.</p>
+    </div>
+</article>
+
+<article class="card quik_break medium">
+    <img src="img/Speedrun.jpg" class="card__image">
+    <div class="card__content">
+        <h3 class="card__title">Овернайт-вівсянка "Speedrun"</h3>
+        <p class="card__text">Готується з вечора. Готова до вживання одразу з холодильника.</p>
+    </div>
+    <div class="card__divider"></div>
+    <div class="card__meta">
+        <p>Категорія: Каша</p>
+        <p>Ккал: 310</p>
+        <p>Час: 10 хв.(+ніч)</p>
+    </div>
+</article>
+
+<article class="card quik_break medium">
+    <img src="img/Quick_Respawn.jpg" class="card__image">
+    <div class="card__content">
+        <h3 class="card__title">Гарячий сендвіч "Quick Respawn"</h3>
+        <p class="card__text">Швидкий тост з яйцем та сиром у стилі "сніданок за 5 хвилин".</p>
+    </div>
+    <div class="card__divider"></div>
+    <div class="card__meta">
+        <p>Категорія: Сендвіч</p>
+        <p>Ккал: 350</p>
+        <p>Час: 10 хв.</p>
+    </div>
+</article>
+
+<article class="card cupcakes medium">
+    <img src="img/Power_UP.jpg" class="card__image">
+    <div class="card__content">
+        <h3 class="card__title">Капкейки "Power-Up" з матчею</h3>
+        <p class="card__text">Ніжні кекси з візуально яскравим зеленим кремом (для "HP Bar").</p>
+    </div>
+    <div class="card__divider"></div>
+    <div class="card__meta">
+        <p>Категорія: Кекс</p>
+        <p>Ккал: 320</p>
+        <p>Час: 45 хв.</p>
+    </div>
+</article>
+
+<article class="card cupcakes low">
+    <img src="img/XP_farm.jpg" class="card__image">
+    <div class="card__content">
+        <h3 class="card__title">Протеїнові мафіни "XP Farm"</h3>
+        <p class="card__text">Кекси з бананом та протеїновим порошком (високий вміст білка).</p>
+    </div>
+    <div class="card__divider"></div>
+    <div class="card__meta">
+        <p>Категорія: Кекс</p>
+        <p>Ккал: 300</p>
+        <p>Час: 40 хв.</p>
+    </div>
+</article>
+
+
+</section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <p class="footer-logo">Смачні рецепти · 2025</p>
+        <p class="footer-text">Колекція домашніх рецептів.</p>
+        <nav class="footer-nav">
+            <a href="#modal_contacts">Про автора</a>
+            <a href="#modal_author">Контакти</a>
+        </nav>
+    </div>
+</footer>
+
+</div>
+
+<div id="modal_contacts" class="modal">
+    <div class="modal_content">
+        <a href="#" class="modal_close" title="Закрити">❌</a>
+        <h2>Наші Контакти</h2>
+        <p>Email: crademt@gmail.com</p>
+        <p>Телефон: +38 099 333 96 81</p>
+    </div>
+</div>
+
+<div id="modal_author" class="modal">
+    <div class="modal_content">
+        <a href="#" class="modal_close" title="Закрити">❌</a>
+        <h2>Про автора</h2>
+        <p>Цей блог створено геймером для геймерів, щоб підтримувати рівень HP та енергії на висоті.</p>
+    </div>
+</div>
+</body>
+</html>
